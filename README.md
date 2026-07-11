@@ -120,6 +120,21 @@ Agent: python3 hermes-keypool.py \
   --keys "sk-aaa,sk-bbb,sk-ccc"
 ```
 
+## Platform Support
+
+This script runs **anywhere** — not just Termux. As long as you have Python 3 and Hermes Agent installed, it works on:
+
+- **Linux** (Ubuntu, Debian, Arch, Fedora, etc.)
+- **macOS** (Intel + Apple Silicon)
+- **Windows** (PowerShell, cmd, WSL)
+- **Termux** (Android)
+- **VPS / Cloud servers** (DigitalOcean, AWS, GCP, etc.)
+- **Docker containers**
+
+No platform-specific dependencies. Pure Python 3, zero pip installs.
+
+> **Note:** [Hermes Agent](https://github.com/NousResearch/hermes-agent) must be installed — the script writes to Hermes' credential pool (`~/.hermes/auth.json`). Without Hermes, the script has no effect.
+
 ## Requirements
 
 - Python 3.6+
